@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+ import React, {useState} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import { login as authLogin } from '../store/authSlice'
 import {Button, Input, Logo} from "./index"
@@ -40,7 +40,7 @@ function Login() {
         <p className="mt-2 text-center text-base text-black/60">
                     Don&apos;t have any account?&nbsp;
                     <Link
-                        to="/signup"
+               to="/signup"
                         className="font-medium text-primary transition-all duration-200 hover:underline"
                     >
                         Sign Up
