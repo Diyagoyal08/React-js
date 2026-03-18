@@ -19,6 +19,10 @@ function App() {
         dispatch(logout())
       }
     })
+    .catch((error) => {
+      console.error('Failed to fetch user:', error.message)
+      dispatch(logout())
+    })
     .finally(() => setLoading(false))
   }, [])
   
